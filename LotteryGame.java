@@ -7,18 +7,18 @@ public class LotteryGame {
         Random random = new Random();
 
         int rounds = 3;
-        int bonusRoundCount = 1; // 1 additional round as bonus
+        int bonusRoundCount = 1;
 
         System.out.println("Welcome to Crayon Muncher's Lottery Game!");
         System.out.println("Rules:\n1. 3 main rounds\n2. Each round increases the numbers you input\n3. Bonus Round included\n4. Have fun!");
 
         for (int round = 1; round <= rounds + bonusRoundCount; round++) {
-            boolean isBonus = (round > rounds); // Check if it's the bonus round
+            boolean isBonus = (round > rounds);
             int numCount = round + 1;
             int[] userNumbers = new int[numCount];
             int[] numWinners = new int[numCount];
 
-            System.out.println("\n" + (isBonus ? "BONUS ROUND! 🎉" : "Round " + round) + " - Enter " + numCount + " numbers (1-10):");
+            System.out.println("\n" + (isBonus ? "BONUS ROUND! " : "Round " + round) + " - Enter " + numCount + " numbers (1-10):");
 
             for (int i = 0; i < numCount; i++) {
                 System.out.print("Enter number " + (i + 1) + " (or press Enter twice to exit): ");
@@ -88,7 +88,7 @@ public class LotteryGame {
             System.out.printf("Chance of winning (exact match): %.10f%%\n", winChance);
         }
 
-        System.out.println("\n Thanks for playing! Hope you enjoyed the game.");
+        System.out.println("\nThanks for playing! Hope you enjoyed the game.");
         kb.close();
     }
 }
