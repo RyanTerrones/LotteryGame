@@ -81,7 +81,7 @@ public class LotteryGame {
                 for (int j = 0; j < numCount; j++) {
                     if (userNumbers[i] == numWinners[j]) {
                         matchCount++;
-                        break; // Avoid counting duplicates
+                        break;
                     }
                 }
             }
