@@ -29,7 +29,6 @@ public class LotteryGame {
                 // Exit the game if input is empty
                 if (input.equals("")) {
                     System.out.println("Game has ended.\nThank you for playing!");
-                    kb.close();
                     return;
                 }
 
@@ -78,11 +77,8 @@ public class LotteryGame {
             // Count how many numbers matched
             int matchCount = 0;
             for (int i = 0; i < numCount; i++) {
-                for (int j = 0; j < numCount; j++) {
-                    if (userNumbers[i] == numWinners[j]) {
-                        matchCount++;
-                        break;
-                    }
+                if (userNumbers[i] == numWinners[i]) {
+                    matchCount++;
                 }
             }
 
