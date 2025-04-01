@@ -10,7 +10,7 @@ public class LotteryGame {
 
         // Print game welcome and rules
         System.out.println("Welcome to Crayon Muncher's Lottery Game!");
-        System.out.println("Rules:\n1. 3 main rounds\n2. Each round increases the numbers you input\n3. Have fun!");
+        System.out.println("Rules:\n1. 4 rounds\n2. Each round increases the numbers you input\n3. Have fun!");
 
         // Loop through main rounds only
         for (int round = 1; round <= rounds; round++) {
